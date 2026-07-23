@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0
+const SPEED: int = 100.0
+const KNOCKBACK_FORCE: int = 100
 
+var is_alive: bool = true
 var health: int = 100
 var target :Node2D = null
 
@@ -10,7 +12,7 @@ var target :Node2D = null
 @onready var take_damage_sound = $TakeDamage
 
 func _physics_process(delta: float) -> void:
-	if target:
+	if is_alive and target:
 		_attack(delta)
 
 
@@ -20,10 +22,32 @@ func _attack(delta: float) -> void:
 	animated_sprite_2d.play("attack")
 	
 
-func take_damage(damage:int) -> void:
+func take_damage(damage:int, attacker_position: Vector2) -> void:
 	health -= damage
 	print(health)
+	if health <= 0:
+		_die()
+	else:
+		take_damage_sound.play()
+		#knockback
+		var knockback_direction = (position - attacker_position).normalized()
+		var target_position = position + knockback_direction * KNOCKBACK_FORCE 
+		
+		var tween = create_tween()
+		tween.set_ease(Tween.EASE_OUT)
+		tween.set_trans(Tween.TRANS_CUBIC)
+		tween.tween_property(self, "position", target_position, 0.5)
+		
+
+func _die() -> void:
+	is_alive = false
+	animated_sprite_2d.play("die")
+	take_damage_sound.pitch_scale = 0.5
 	take_damage_sound.play()
+	#disable collision
+	$CollisionShape2D.set_deferred("disabled", true)
+	$Sight/CollisionShape2D.set_deferred("disabled", true)
+	
 
 func _on_sight_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
@@ -31,6 +55,6 @@ func _on_sight_body_entered(body: Node2D) -> void:
 
 
 func _on_sight_body_exited(body):
-	if body.name == "Player":
+	if body.name == "Player" and is_alive:
 		target = null
 		animated_sprite_2d.play("idle")

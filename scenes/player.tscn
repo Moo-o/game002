@@ -232,13 +232,13 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.2,
 "texture": SubResource("AtlasTexture_o0yny")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tqkay")
 }, {
-"duration": 1.0,
+"duration": 0.2,
 "texture": SubResource("AtlasTexture_sbqs6")
 }, {
 "duration": 1.0,
@@ -425,7 +425,7 @@ animations = [{
 size = Vector2(13.25, 8.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xdmae"]
-size = Vector2(25, 18)
+size = Vector2(30, 18)
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(4, 4)
