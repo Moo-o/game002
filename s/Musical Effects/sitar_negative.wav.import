@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bx7ibqkqxo3bs"
+path="res://.godot/imported/sitar_negative.wav-1f8476d201547522c71b70a6bd82213a.sample"
+
+[deps]
+
+source_file="res://s/Musical Effects/sitar_negative.wav"
+dest_files=["res://.godot/imported/sitar_negative.wav-1f8476d201547522c71b70a6bd82213a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

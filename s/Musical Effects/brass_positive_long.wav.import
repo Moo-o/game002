@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dxlbk340pkm6v"
+path="res://.godot/imported/brass_positive_long.wav-1db3b942e7ca15dcebcb6ec534a09d6f.sample"
+
+[deps]
+
+source_file="res://s/Musical Effects/brass_positive_long.wav"
+dest_files=["res://.godot/imported/brass_positive_long.wav-1db3b942e7ca15dcebcb6ec534a09d6f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

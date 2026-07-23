@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2rawmec13snq"
+path="res://.godot/imported/harpsichord_chime_quick.wav-13989f2dcf0e55adb87e898017b9fcf7.sample"
+
+[deps]
+
+source_file="res://s/Musical Effects/harpsichord_chime_quick.wav"
+dest_files=["res://.godot/imported/harpsichord_chime_quick.wav-13989f2dcf0e55adb87e898017b9fcf7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

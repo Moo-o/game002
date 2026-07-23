@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cytclvo6yrfdl"
+path="res://.godot/imported/xylophone_mystery.wav-37552c202c68e7a34cff852cfec34583.sample"
+
+[deps]
+
+source_file="res://s/Musical Effects/xylophone_mystery.wav"
+dest_files=["res://.godot/imported/xylophone_mystery.wav-37552c202c68e7a34cff852cfec34583.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

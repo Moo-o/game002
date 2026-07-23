@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://0m07btywfqwr"]
+
+[ext_resource type="PackedScene" uid="uid://c2ws7vmaauktk" path="res://scenes/player.tscn" id="1_5belj"]
+[ext_resource type="PackedScene" uid="uid://bipfus20ast24" path="res://scenes/slime.tscn" id="2_4p4lm"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_5belj")]
+position = Vector2(586, 311)
+
+[node name="Slime" parent="." instance=ExtResource("2_4p4lm")]
+position = Vector2(867, 289)

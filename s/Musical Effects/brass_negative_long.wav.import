@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsra2katxcyvf"
+path="res://.godot/imported/brass_negative_long.wav-2d9c55e066921360fdf1948400dee4ef.sample"
+
+[deps]
+
+source_file="res://s/Musical Effects/brass_negative_long.wav"
+dest_files=["res://.godot/imported/brass_negative_long.wav-2d9c55e066921360fdf1948400dee4ef.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

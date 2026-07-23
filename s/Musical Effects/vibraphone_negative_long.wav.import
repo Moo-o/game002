@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cat3if7o0wxot"
+path="res://.godot/imported/vibraphone_negative_long.wav-ee9eace25aa0432d74f8b239fab0eede.sample"
+
+[deps]
+
+source_file="res://s/Musical Effects/vibraphone_negative_long.wav"
+dest_files=["res://.godot/imported/vibraphone_negative_long.wav-ee9eace25aa0432d74f8b239fab0eede.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
